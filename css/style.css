@@ -1,395 +1,520 @@
 body{
-  font-family: 'Inter', cursive;
-  background: linear-gradient(135deg, #daf1f7, #033964) fixed;
+    font-family: 'Montserrat', sans-serif;
 }
 
 header {
-  width: 100%;
-  padding: 2rem 4rem 1rem;
+    background-color: #BBBBBB;
+    padding: 20px 0;
+}
+
+.caja{
+    width: 940px;
+    position: relative;
+    margin: 0 auto;
+}
+
+nav{
+    position: absolute;
+    top:10px;
+    right: 0;
+}
+
+nav li{
+    display: inline;
+    margin: 0 0 0 15px;
+}
+
+nav a{
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+}
+
+nav a:hover{
+    color: #c78c19;
+    text-decoration: underline;
+}
+
+.portafolio{
+    width: 1080px;
+    margin: 0 auto;
+    padding: 50px;
+}
+
+
+.portafolio li{
+    display:inline-block;
+    text-align: center;
+    width: 30%;
+    vertical-align: top;
+    margin: 0 1.5%;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    border: 2px solid #8d8d8d83;
+    border-radius: 10px;
+    box-shadow: 4px 4px 4px  #8d8d8d83;
+}
+
+.portafolio li:hover{
+    border-color: #44c3eb;
+}
+
+.portafolio li:active{
+    border-color: #088c19;
+}
+
+.portafolio h2{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.portafolio li:hover h2{
+    font-size: 33px;
+}
+
+.portafolio-descripcion{
+    font-size: 18px;
+}
+
+.portafolio-precio{
+    font-size: 20px;
+    font-weight: bold;
+    margin-top:10px;
+}
+
+.portafolio i{
+	font-size: 112px;
+}
+
+.portafolio i:hover{
+    color: #44c3eb;
+}
+
+.portafolio i:active{
+    color: #44c3eb;
+}
+
+footer{
+    text-align: center;
+    background: url(../imagenes/bg.jpg);
+    padding:40px;
+}
+
+.copyright{
+    color:#FFFFFF;
+    font-size: 13px;
+    margin:20px;
 }
 /*
-html {
-  overflow: hidden;
+form{
+    margin: 40px 0;
+    
 }
 
+.input-padron{
+    display: block;
+    margin: 0 0 20px;
+    padding: 10px 25px;
+    width: 50%;
+}
+.checkbox{
+    margin:20px 0;
+}
 */
-nav {
+
+/*------------------------Contacto-----------------------------*/
+
+.contacto, .contacta{
+  padding: 4em 0;
+}
+
+.form{
   display: flex;
-  justify-content: start;
+  justify-content: center;
   align-items: center;
-  padding-top: 10px;
-}
-
-.logo {
-  width: 100px;
-  height: 50px;
-  padding-top: 0px;
-  padding-left: 40px;
-}
-
-
-h1 {
-  padding: 0rem 4rem;
-  font-weight: 200;
-  text-transform: uppercase;
-  font-size: 2rem;
-}
-
-main{
-  display: flex;
-}
-
-.seccion-texto{
-  display: flex;
-  gap: 2em;
-  width: 50%;
   flex-direction: column;
-  margin-left: 15%;
-  padding-top: 3em;
 }
 
-.campo-texto{
-  font-weight: 400;
-  font-size: 2em;
-  line-height: 1.5em;
-  color: #002653;
-  font-family: 'Inter', cursive;
-  border: none;
-  background: transparent;
+.form input{
+  margin-top: 15px;
+  border: 1px solid #61616156;
+  width: 250px;
+  height: 50px;
+  border-radius: 20px;
+  padding: 15px;
+}
+
+.form fieldset label input{
+  width: 35px;
+  height: 20px;
+}
+
+.form fieldset{
+  padding: 2em 0;
+}
+
+.form textarea{
+  width: 250px;
+  margin-top: 15px;
+  border: 1px solid #3030303056;
+  border-radius: 20px;
+  padding: 15px;
+}
+.form .input_button{
+  background-color: #3f89b4;
+  color: white;
+  width: 150px;
+  transition: all 0.3s;
+}
+.form .input_button:hover{
+  transform: scale(1.1);
+  transition: all 0.3s;
+  background-color: #8fe5ff;
+  box-shadow: 0px 0px 10px 0 #3f3f3f9c;
+}
+
+ .contacto, h2, h3, h4 {
+  padding: 10px 15px 5px 15px;
+  text-align: center;
+}
+
+form label, form legend{
   display: block;
-  resize: none;
-  width: 80%;
+  font-size: 16px;
+  margin: 0 0 10px;
 }
 
-.campo-texto:focus{
-  outline: none;
-}
-
-.campo-texto::placeholder{
-  color: #002653;
-}
-
-.informacion{
-  color: #FFFFFF;
-  width: auto;
-  height: 1em;
-  font-size: 1.1em;
-}
-
-.seccion-botones{
-  display: flex;
-  flex-direction: row;
-  gap: 2em;
-  width: auto;
-  height: 4em;
-}
-
-.btnEncriptar{
-  flex: none;
-  background: #002653;
-  border-radius: 1.5em;
-  width: 35%;
-  height: 5.5em;
-  font-family: 'Inter', cursive;
-  color: white;
-  font-weight: bold;
-  font-size: 0.9em;
-  cursor: pointer;
-}
-
-.btnDesencriptar{
-  flex: none;
-  width: 35%;
-  height: 5.5em;
-  background: #FFFFFF;
-  border: 0.2em solid #002653;
-  border-radius: 1.5em;
-  font-family: 'Inter', cursive;
-  color: #002653;
-  font-weight: bold;
-  font-size: 0.9em;
-  cursor: pointer;
-}
-
-.seccion-encriptado{
-  display: flex;
-  position: relative;
-  padding-top: 1.3em;
-  width: 22.5%;
-  background: #FFFFFF;
-  box-shadow: 0em 1.5em 2em -0.5em rgb(0 0 0 / 25%);
-  border-radius: 2em;
-  margin: 3.5em 3em 1em 0;
-}
-
-.btnDesencriptar:hover, .btnEncriptar:hover, .btncopiar:hover{
-  scale: 1.1;
-}
-
-.mensaje{/*
-  display: none;*/
-  position: absolute;
-  left: 0.8em;
-  font-weight: 400;
-  font-size: 1.5em;
-  line-height: 150%;
-  color: #495057;
-  font-family: 'Inter', cursive;
-  border: none;
-  background: transparent;
-  resize: none;
-  width: 90%;
-}
-
-.mensaje:focus{
-  outline: none;
-}
-
-.imagen-busqueda{
-  position: absolute;
-  width: 75%;
-  left: 7.5%;
-  right: 12.5%;
-  top: 7.5em;
-  filter: drop-shadow(0 0 0.75em #000000);
-}
-
-.aviso{
-  text-align: center;
-  position: absolute;
-  width: 75%;
-  height: 9.5em;
-  top: 26em;
-  left: 12.5%;
-  right: 12.5%;
-  font-size: 1em;
-}
-
-.aviso strong{
-  font-weight: bolder;
-  font-size: 1.6em;
-}
-
-.contenedor-copiar{
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: column-reverse;
-  margin: 1em 2em;
-  width: 100%;
-}
-
-.btncopiar{/*
-  display: none;*/
-  width: auto;
-  height: 4.5em;
-  border: 1px solid #002653;
-  border-radius: 1.5em;
-  color: #002653;
-  font-family: 'Inter', cursive;
-  font-weight: bolder;
-  font-size: 0.9em;
-  cursor: pointer;
-}
-
-.ocultar{
-  display: none;
-}
-
-.footer1{
-  font-family: 'Inter', cursive;
-  font-size: 14px;
-  font-weight: bold;
-  text-align: center;
-  padding: 0.5em 0;
-  width: 100%;
-  position: fixed;
-  bottom: 0;
-  height: 5vh;
-  display: flex;
-  flex-flow: column nowrap;
-  align-items: center;
-  color: white;
-
-  padding-top: 20px;
-}
-
-footer ul{
-  display: flex;
-  flex-flow: row nowrap;
-}
-
-footer li{
-  list-style: none;
-  margin: 5px 10px 5px 10px;
-}
-
-footer a{
-  text-decoration: none;
-  color: white;
-  font-size: 26px;
-}
-
-footer a:hover{
-  color: #000000;
-}
-
-
-@media screen and (min-width:375px) and (max-width:768px) {
-  main{
-    flex-direction: column;
-    align-items: baseline;
-    padding: 0 1.5em;
-    align-items: center;
+  
+  @-webkit-keyframes animate-loading {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  @keyframes animate-loading {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
   }
 
-  .seccion-texto{
-    display: flex;
-    gap: 2em;
+  
+
+
+
+
+  ---------------------------------------------------------------------
+  ---------------------------------------------------------------------*/
+
+table{
+    margin: 40px 40px;
+}
+
+thead{
+    background: #555555;
+    color:white;
+    font-weight: bold;
+}
+
+td,th{
+    border: 1px solid #000000;
+    padding: 8px 15px;
+}
+
+/*Aquí inicia el CSS para nuestra home*/
+.banner{
     width: 100%;
-    flex-direction: column;
-    margin:0 auto;
-    padding-top: 3em;
-  }
+}
 
-  .logo{
-    left: 0;
-    margin-bottom: 1.5em;
-  }
+.principal{
+    padding: 3em 0;
+    background: #FEFEFE;
+    width: 940px;
+    margin: 0 auto; 
+}
 
-  .campo-texto {
-    width: 90%;
-    height: 10em;
-    font-size: 1.5em;
-  }
+.titulo-principal{
+    text-align: center;
+    font-size: 2em;
+    margin: 0 0 1em;
+    clear:left;
+}
 
-  .btnEncriptar, .btnDesencriptar{
-    width: 45%;
-    height: auto;
-  }
+.principal p{
+    margin: 0 0 1em;
+}
 
-  .seccion-encriptado{
-    width: 100%;
-    flex-direction: column;
-    margin: 3em auto;
-  }
+.principal strong{
+    font-weight: bold;
+}
 
-  .mensaje, .aviso{
-    position: static;
-  }
+.principal em{
+    font-style: italic;
+}
 
-  .aviso{
-    width: 90%;
-    height: auto;
+.utensilios{
+    width: 120px;
+    float:left;
+    margin: 0 20px 20px 0;
+}
+
+.mapa{
+    padding: 3em 0;
+    background: linear-gradient(#FEFEFE, #888888)
+}
+
+.mapa p{
+    margin: 0 0 2em;
+    text-align: center;
+}
+
+.mapa-contenido{
+    width: 940px;
     margin: 0 auto;
-  }
+}
 
-  .mensaje{
-    height: 5em;
-    font-size: 1em;
+.diferenciales{
+    padding: 3em 0;
+    background: #888888;
+}
+
+.contenido-diferenciales{
+    width: 640px;
     margin: 0 auto;
-  }
+}
 
-  .imagen-busqueda{
-    width: 0%;
-    width: 0%;
-    left: 0%;
-    right: 0%;
-    height: 0em;
-    top: 0em;
+.lista-diferenciales{
+    width: 40%;
+    display: inline-block;
+    vertical-align: top;
+}
 
-  }
+.items{
+    line-height: 1.5;
+}
 
-  .contenedor-copiar{
-    width: 90%;
+.items:before{
+    content:"★"
+}
+
+.items:first-child{
+    font-weight: bold;
+}
+
+.imagen-diferenciales{
+    width: 60%;
+    transition: 400ms;
+    box-shadow: 10px 10px 30px 15px #000000;
+}
+
+.imagen-diferenciales:hover{
+    opacity: 0.3;
+}
+
+.video{
+    width: 560px;
     margin: 1em auto;
+}
+
+
+
+/*--------------------------------------------------------------
+# RESPONSIVE
+--------------------------------------------------------------*/
+
+
+@media screen and (max-width:480px){
+    h1{
+        text-align: center;
+    }
+    nav{
+        position: static;
+    }
+
+    .caja, .principal, .mapa-contenido, .contenido-diferenciales, .video , .form, .portafolio li, .contacto, .formulario{
+        width: auto;
+    }
+    .lista-diferenciales, .imagen-diferenciales{
+        width: 100%;
+    }
+
+    .portafolio{
+      display:flex;
+      flex-direction: column;
+      
+      width: 100%;
+    }
+    .portafolio li{
+      margin: 0 0 2em;
+    }
+
+}
+
+/*--------------------------------------------------------------
+# Boton Arriba
+--------------------------------------------------------------*/
+#arriba{
+    width: 50px;
+    height:  50px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    background-color: #00BFFF;
+    position: fixed;
+    left: 85%;
+    bottom: 50px;
+    cursor: pointer;
+    transform: all .3s ease;
+    transform: scale(0);
   }
-
-
-  header {
-    padding: 0;
+  #arriba:hover{
+    opacity: .70;
+    transform: scale(1.1);
+  }
+  .bi-arrow-up-short{
+    font-size: 30px;
+      color: #ffffff;
+  }
+  @media(min-width: 768px){
+    #arriba{
+      margin-left: 7%;
+    }
   }
   
 
-}
 
-@media screen and (min-width:0px) and (max-width:375px) {
-  main{
-    flex-direction: column;
-    align-items: baseline;
-    padding: 0 1.5em;
-    align-items: center;
-  }
-
-  .seccion-texto{
-    display: flex;
-    gap: 2em;
-    width: 100%;
-    flex-direction: column;
-    margin:0 auto;
-    padding-top: 3em;
-  }
-
-  .logo{
-    left: 0;
-    margin-bottom: 1.5em;
-  }
-
-  .campo-texto {
-    width: 90%;
-    height: 10em;
-    font-size: 1.5em;
-  }
-
-  .seccion-botones{
-    flex-direction: column;
-  } 
   
-  .btnEncriptar, .btnDesencriptar{
+/*--------------------------------------------------------------
+# Poratfolio
+--------------------------------------------------------------*/
+.work-box {
+    margin-bottom: 3rem;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    background-color: #fff;
+  }
+  
+  .work-box:hover img {
+    transform: scale(1.3);
+  }
+  
+  .work-img {
+    display: block;
+    overflow: hidden;
+  }
+  
+  .work-img img {
+    transition: all 1s;
+  }
+  
+  .work-content {
+    padding: 2rem 3% 1rem 4%;
+  }
+  
+  .work-content .w-more {
+    color: #4e4e4e;
+    font-size: 0.8rem;
+  }
+  
+  .work-content .w-more .w-ctegory {
+    color: #0078ff;
+  }
+  
+  .work-content .w-like {
+    font-size: 2.5rem;
+    color: #0078ff;
+    float: right;
+  }
+  
+  .work-content .w-like a {
+    color: #0078ff;
+  }
+  
+  .work-content .w-like .num-like {
+    font-size: 0.7rem;
+  }
+  
+  .w-title {
+    font-size: 1.2rem;
+  }
+  
+
+  /*--------------------------------------------------------------
+  # Portafolio Detalles
+  --------------------------------------------------------------*/
+  .portfolio-details {
+    padding-top: 40px;
+  }
+  
+  .portfolio-details .portfolio-details-slider img {
     width: 100%;
-    height: 90%;
-    font-size: 1.05em;
   }
-
-  .seccion-encriptado{
-    width: 100%;
-    flex-direction: column;
-    margin-top: 6.5em;
+  
+  .portfolio-details .portfolio-details-slider .swiper-pagination {
+    margin-top: 20px;
+    position: relative;
   }
-
-  .mensaje, .aviso{
-    position: static;
+  
+  .portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+    background-color: #fff;
+    opacity: 1;
+    border: 1px solid #0078ff;
   }
-
-  .aviso{
-    width: 90%;
-    height: auto;
-    margin: 0 auto;
-    font-size: 0.8em;
+  
+  .portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet-active {
+    background-color: #0078ff;
   }
-
-  .mensaje{
-    height: 5em;
-    font-size: 1em;
-    margin: 0 auto;
+  
+  .portfolio-details .portfolio-info {
+    padding: 30px;
+    box-shadow: 0px 0 30px rgba(78, 78, 78, 0.08);
   }
-
-  .imagen-busqueda{
-    width: 0%;
-    width: 0%;
-    left: 0%;
-    right: 0%;
-    height: 0em;
-    top: 0em;
-
+  
+  .portfolio-details .portfolio-info h3 {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #eee;
   }
-
-  .contenedor-copiar{
-    width: 90%;
-    margin: 1em auto;
+  
+  .portfolio-details .portfolio-info ul {
+    list-style: none;
+    padding: 0;
+    font-size: 15px;
   }
-
-  header {
+  
+  .portfolio-details .portfolio-info ul li+li {
+    margin-top: 10px;
+  }
+  
+  .portfolio-details .portfolio-description {
+    padding-top: 30px;
+  }
+  
+  .portfolio-details .portfolio-description h2 {
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+  
+  .portfolio-details .portfolio-description p {
     padding: 0;
   }
 
+
+.work-box,
+.service-box,
+ {
+  box-shadow: 0 13px 8px -10px rgba(0, 0, 0, 0.1);
 }
+
+

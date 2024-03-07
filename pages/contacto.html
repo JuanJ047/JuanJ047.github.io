@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width"> 
+    <title>Contacto - Strategy</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" href="../imagenes/logo.ico">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+  </head>
+  <body>
+      <header>
+            <div class="caja">
+                <h1><img src="../imagenes/logo.png"></h1>
+                <nav>
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="../pages/portafolio.html">Portafolio</a></li>
+                        <li><a href="../pages/contacto.html">Contacto</a></li>
+                    </ul>
+                </nav>
+            </div>
+      </header>
+      <main>
+          <section id="contacto" class="contacto">
+              <div class="container">
+                <div class="row">
+                  <div class="col-lg-6">
+                    <div class="info-box mb-4">
+                      <h1><i class="bi bi-pin-map-fill"></i></h1>
+                      <h3>Nuestra Dirección</h3>
+                      <p>Las Quinas 129, Argentina, CP 4400</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6">
+                    <div class="info-box  mb-4">
+                      <h1><i class="bi bi-envelope-at-fill"></i>              </h1>
+                      <h3>E-mail</h3>
+                      <p>jjllanes047@gmail.com</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6">
+                    <div class="info-box  mb-4">
+                      <h1><i class="bi bi-phone-fill"></i></h1>
+                      <h3>Whatsapp</h3>
+                      <p>+54 3874 123 902</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </section>
+
+          <section class="contacta container" id="contacta">
+            <div class="row">
+              <div class="col-lg-6 ">
+                <iframe class="mb-4 mb-lg-0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28992.815970670752!2d-65.43967641696304!3d-24.72337838358471!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x941bc105df349b99%3A0xfd20bd337b006afb!2sBarrio%20El%20Huaico%2C%20Salta!5e0!3m2!1ses!2sar!4v1587606853105!5m2!1ses!2sar" frameborder="0" style="border:0; width: 100%; height: 384px;" allowfullscreen></iframe>
+              </div>
+              <div class="col-lg-6">
+
+                <h4>Completa Tus Datos</h4>
+
+                <form action="form.html" class="form" method="post">
+
+                  <input type="text" placeholder="Nombre (requerido)" required>
+                  <input type="email" placeholder="Email (requerido)" required>
+                  <input type="tel" placeholder="Teléfono">
+
+                  <textarea name="your-message" placeholder="Mensaje"></textarea>
+                  <fieldset>
+                  
+                    <legend>¿Cómo le gustaría que nos contactemos?</legend>
+                    <label for="radio-email"><input type="radio" name="contacto" value="email" id="radio-email">Email</label>
+                    <label for="radio-telefono"><input type="radio" name="contacto" value="telefono" id="radio-telefono">Teléfono</label>
+                    <label for="radio-whatsapp"><input type="radio" name="contacto" value="whatsapp" id="radio-whatsapp" checked>WhatsApp</label>
+              
+                    <legend>¿En cúal horario prefiere ser atendido?</legend>
+    
+                    <select>
+                        <option>Mañana</option>
+                        <option>Tarde</option>
+                        <option>Noche</option>
+                    </select>
+                
+                    <label class="checkbox"><input type="checkbox" checked>¿Le gustaría recibir novedades de Strategy?</label>
+    
+                </fieldset>
+                <input type="submit" value="Enviar" class="input_button">
+              </form>
+
+              
+              </div>
+            </div>
+          </section>
+
+          <button class="button_arriba" id="arriba">
+              <i class="bi bi-arrow-up-short"></i>
+          </button>
+      </main>
+      <footer>
+        <img src="../imagenes/logo-blanco.png">
+        <p class="copyright">&copy Copyright Strategy - 2024</p>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+        <script src="../script/app.js"></script>
+      </footer>
+  </body>
+</html>
