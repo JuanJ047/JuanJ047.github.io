@@ -40,7 +40,7 @@ nav a:hover{
 .portafolio{
     width: 1080px;
     margin: 0 auto;
-    padding: 50px;
+    padding: 160px 0;
 }
 
 
@@ -99,7 +99,7 @@ nav a:hover{
 footer{
     text-align: center;
     background: url(../imagenes/bg.jpg);
-    padding:40px;
+    padding:40px 0;
 }
 
 .copyright{
@@ -123,6 +123,7 @@ form{
     margin:20px 0;
 }
 */
+
 
 /*------------------------Contacto-----------------------------*/
 
@@ -230,11 +231,11 @@ td,th{
 
 /*Aquí inicia el CSS para nuestra home*/
 .banner{
-    width: 100%;
+  width: 100%;
 }
 
 .principal{
-    padding: 3em 0;
+    padding: 4em 0;
     background: #FEFEFE;
     width: 940px;
     margin: 0 auto; 
@@ -294,6 +295,7 @@ td,th{
     width: 40%;
     display: inline-block;
     vertical-align: top;
+    padding: 3em 0;
 }
 
 .items{
@@ -342,13 +344,12 @@ td,th{
         width: auto;
     }
     .lista-diferenciales, .imagen-diferenciales{
-        width: 100%;
+        width: 90%;
     }
 
     .portafolio{
       display:flex;
       flex-direction: column;
-      
       width: 100%;
     }
     .portafolio li{

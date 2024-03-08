@@ -1,2 +1,2 @@
-countdown = [3, 2, 1]
-print(countdown)
+items = ["water", "bread", "orange", "melon"]
+print(items[0] + items[3])
