@@ -1,2 +1,2 @@
-items = ["water", "bread", "orange", "melon"]
-print(items[0] + items[3])
+vehicle = 'motorbike'
+print(vehicle[-1])

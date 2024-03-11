@@ -41,6 +41,7 @@ nav a:hover{
     width: 1080px;
     margin: 0 auto;
     padding: 160px 0;
+    
 }
 
 
@@ -55,6 +56,12 @@ nav a:hover{
     border: 2px solid #8d8d8d83;
     border-radius: 10px;
     box-shadow: 4px 4px 4px  #8d8d8d83;
+    
+}
+
+.portafolio li a{
+  text-decoration: none;
+  color: #000000;
 }
 
 .portafolio li:hover{
@@ -68,10 +75,12 @@ nav a:hover{
 .portafolio h2{
     font-size: 30px;
     font-weight: bold;
+    
 }
 
-.portafolio li:hover h2{
+.portafolio li h2:hover{
     font-size: 33px;
+    color: #44c3eb;
 }
 
 .portafolio-descripcion{
